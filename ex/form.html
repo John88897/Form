@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-color:rgb(71, 183, 253);
+}
+.container{
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    padding: 20px 25px;
+    border-radius: 5%;
+    border: solid rgb(3, 113, 110);
+    
+}
+.container h1, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 10px;
+    font-weight: 400;
+}
+
+input{
+    margin-bottom: 15px;
+    width: 400px;
+    height: 25px;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+select{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+button{
+    color: white;
+    background-color: rgba(34, 151, 8, 0.719);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    
+}
+
+button:hover{
+    background-color:rgb(3, 118, 32);
+    transform: scale(1);
+}
+.radio-group {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+
+.radio-group label {
+    font-size: 15px;
+    color: #444;
+    margin-left: 30px;
+    
+}
+.income{
+    display: flex;
+    justify-content: space-between;
+}
+/* .hobby{
+    display: flex;
+} */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1  style="justify-self: center; ">Create Account</h1>
+            <div style="display: flex;">
+                
+                <label for="text">First name*</label>
+                <input type="text" placeholder="enter your first name">
+                <label for="text">Last name*</label>
+                <input type="text" placeholder="enter your last name">
+            </div>
+            <label for="email">Email*</label>
+            <input type="email" placeholder="enter your email">
+            <div style="display: flex;">
+
+                <label for="password">Password*</label>
+                <input type="password" placeholder="enter your password">
+                <label for="password">Confirm Password*</label>
+                <input type="password" placeholder="enter your password">
+            </div>
+            
+                
+            <h3 style="color: rgb(3, 146, 146);">Gender</h3>
+                <div class="radio-group"> 
+                    <label for="">Male</label>
+                    <input type="radio">
+                    <label for="">Female</label>
+                    <input type="radio"><br><br>
+                </div >
+                <h3 style="color: rgb(3, 146, 146);">Hobbies</h3>
+                <div class="radio-group"> 
+                    <label for="">Music</label>
+                    <input type="radio">
+                    <label for="">Sport</label>
+                    <input type="radio"><br><br>
+                    <label for="">Travel</label>
+                    <input type="radio"><br><br>
+                    <label for="">Movies</label>
+                    <input type="radio"><br><br>
+                </div >
+
+            <div class="income">
+                <div>
+
+                    <h3 style="color: rgb(3, 146, 146);">Source of income</h3>
+                    <select name="" id="">      
+                        <option value="">Employed</option>
+                        <option value="">Unemployed</option>
+                    </select>
+                </div>
+                <div>
+                    <h3 style="color: rgb(3, 146, 146);">Income</h3>
+                    <input type="range">
+                </div>
+            </div>
+            <br><br>
+            <h3>Bio</h3>
+            <textarea name="" ></textarea><br><br>
+            <button type="submit">Create</button>
+        </form>
+        
+</body>
+</html>
